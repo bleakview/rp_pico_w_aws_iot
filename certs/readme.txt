@@ -1,0 +1,1 @@
+The certificates must be in der format. You can use openssl to convert the certificates.
