@@ -24,10 +24,10 @@ def get_ssl_params():
     # These keys must be in der format the keys
     # downloaded from AWS website is in pem format
     keyfile = '/certs/private.der'
-    with open(keyfile, 'r') as f:
+    with open(keyfile, 'rb') as f:
         key = f.read()
     certfile = "/certs/certificate.der"
-    with open(certfile, 'r') as f:
+    with open(certfile, 'rb') as f:
         cert = f.read()    
     ssl_params = {'key': key,'cert': cert, 'server_side': False}
     return ssl_params
